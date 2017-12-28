@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <string>
-#include "variable.h"
+#include "Variable.h"
 
 using namespace std;
 

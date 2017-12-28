@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include <unordered_map>
-#include "graph.h"
+#include "Graph.h"
 #include <cmath>
 #include <iomanip>
 #include <list>

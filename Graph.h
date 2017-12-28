@@ -6,8 +6,8 @@
 #include <unordered_map>
 #include <queue>
 #include <fstream>
-#include "variable.h"
-#include "function.h"
+#include "Variable.h"
+#include "Function.h"
 
 using namespace std;
 

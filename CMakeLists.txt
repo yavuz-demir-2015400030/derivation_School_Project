@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.8)
-project(project4_yavuz_demir_2015400030_master)
+cmake_minimum_required(VERSION 2.8)
+project(project4)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES main.cpp Variable.cpp Variable.h Function.cpp Function.h Graph.h Graph.cpp)
-add_executable(project4_yavuz_demir_2015400030_master ${SOURCE_FILES})
+add_executable(project4 ${SOURCE_FILES})
