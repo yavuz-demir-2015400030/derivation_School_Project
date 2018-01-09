@@ -152,7 +152,13 @@ double Graph::forwardPass(vector<double> inputValues){
             for(int i=0; i<vars[id]->getOutgoings().size(); i++){
                 if(!vars[id]->getOutgoings()[i]->visited) {
                     vars[id]->getOutgoings()[i]->visited = true;
+                    if(vars[id]->getOutgoings().size() == 1){
                     q_Forward.push(vars[id]->getOutgoings()[i]->id);
+                    }
+                    }else{
+                    if(vars[id]->getOutgoings().size() == 2){
+                        q_Forward.push(vars[id]->getOutgoings()[i]->id);
+                    }
                 }
             }
 
