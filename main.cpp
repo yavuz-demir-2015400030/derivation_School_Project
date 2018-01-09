@@ -127,7 +127,7 @@ int main(int argc, char* argv[]) {
     ifstream input(argv[2]);
 
 
-    fstream output1, output2;
+    ofstream output1, output2;
     output1.open(argv[3]);
     output2.open(argv[4]);
 
