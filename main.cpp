@@ -157,14 +157,14 @@ int main(int argc, char* argv[]) {
             }
 //            cout << "" << endl;
 //            cout << setprecision(16) << myGraph.forwardPass(inputs) << endl;
-            output1 << fixed << setprecision(10) << myGraph.forwardPass(inputs);
+            output1 << fixed << setprecision(10) << myGraph.forwardPass(inputs)<<endl;;
 
             vector<double> outDer = myGraph.backwardPass();
             for (int k = 0; k < numOfVar; k++) {
 //                cout << fixed << setprecision(16) << outDer[k] << "  ";
                 output2 << fixed << setprecision(10) << outDer[k] << " ";
             }
-            cout << "" << endl;
+            output2 << "" << endl;
 
             for (int j = 0; j < numOfVar; j++) {
                 inputs.pop_back();
