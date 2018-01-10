@@ -205,8 +205,18 @@ vector<double> Graph::backwardPass(){
         if(type[id] == VARIABLE){
 
             if(!vars[id]->isRoot){
+                 bool ok = true;
+                for(int n=0; n<vars[id]->getOutgoings().size(); n++){
+                    if(!vars[id]->getOutgoings()[n]->visited){
+                        ok = false;
+                        vars[id]->visited = false;
+                        break;
+                    }
+                }
+                if(ok) {
                 fncs[vars[id]->from->id]->visited= true;
                 q_Backward.push(vars[id]->from->id);
+                }
             }
 
         }else{
