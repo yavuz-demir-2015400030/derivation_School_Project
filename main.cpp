@@ -146,8 +146,9 @@ int main(int argc, char* argv[]) {
 
 //    cout<< "\n" << endl;
 
-
-        while (input.good()) {
+int eof = 0;
+        while (eof != 20) {
+            eof++;
 
             for (int j = 0; j < numOfVar; j++) {
                 double a;
