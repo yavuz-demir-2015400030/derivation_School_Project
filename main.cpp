@@ -146,22 +146,17 @@ int main(int argc, char* argv[]) {
 
 //    cout<< "\n" << endl;
 
-bool finished = false;
+
         while (input.good()) {
 
             for (int j = 0; j < numOfVar; j++) {
                 double a;
                 input >> a;
-                if(isnan(a)){
-                    finished = true;
-                    break;
-                }
+              
 //                cout<<setprecision(16) << a << "  ";
                 inputs.push_back(a);
             }
-            if(finished){
-                break;
-            }
+            
 //            cout << "" << endl;
 //            cout << setprecision(16) << myGraph.forwardPass(inputs) << endl;
             output1 << fixed << setprecision(10) << myGraph.forwardPass(inputs)<<endl;;
